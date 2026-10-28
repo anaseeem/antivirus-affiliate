@@ -19,6 +19,19 @@ document.querySelectorAll("[data-year]").forEach((el) => {
   el.textContent = new Date().getFullYear();
 });
 
+/* ---------- Deal filter ---------- */
+const filterButtons = document.querySelectorAll("[data-filter]");
+
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const brand = button.dataset.filter;
+    filterButtons.forEach((b) => b.setAttribute("aria-pressed", String(b === button)));
+    document.querySelectorAll(".deal").forEach((deal) => {
+      deal.hidden = brand !== "all" && deal.dataset.brand !== brand;
+    });
+  });
+});
+
 /* ---------- Picker ---------- */
 const picker = document.querySelector("#picker-form");
 
