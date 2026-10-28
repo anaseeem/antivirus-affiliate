@@ -5,7 +5,7 @@ Static HTML/CSS/JS. No build step. Deploy the folder as-is (Cloudflare Pages, Ne
 ## Before launch
 
 1. **Placeholders**: find and replace across all `.html` files:
-   `MADDY`, `{{DOMAIN}}`, `{{COMPANY_LEGAL_NAME}}`, `{{STREET_ADDRESS}}`, `{{CITY}}`, `{{STATE}}`, `{{ZIP}}`,
+   `Norton 360`, `{{DOMAIN}}`, `{{COMPANY_LEGAL_NAME}}`, `{{STREET_ADDRESS}}`, `{{CITY}}`, `{{STATE}}`, `{{ZIP}}`,
    `{{EMAIL}}`, `{{EFFECTIVE_DATE}}`, `{{LAST_CHECKED_DATE}}`, `{{RETENTION_PERIOD}}`, `{{GOVERNING_STATE}}`
    ```sh
    grep -rho '{{[A-Z_]*}}' *.html | sort -u   # list what's left
