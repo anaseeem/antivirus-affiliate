@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Norton vs McAfee: Which Antivirus Fits Your Home? | MADDY</title>
+  <meta name="description"
+    content="An independent, plain-English comparison of Norton 360 and McAfee Total Protection. Answer three questions and see which plan fits your devices and budget.">
+  <link rel="canonical" href="https://{{DOMAIN}}/">
+  <meta property="og:title" content="Norton vs McAfee: Which Antivirus Fits Your Home?">
+  <meta property="og:description" content="Independent comparison of Norton 360 and McAfee Total Protection.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Public+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <!-- TODO: Google tag (gtag.js) + consent banner go here -->
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="disclosure-strip">
+    <div class="wrap">
+      <p>We're an independent comparison site, not Norton or McAfee. We may earn a commission when you buy through our
+        links. <a href="affiliate-disclosure.html">How we make money</a></p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="wordmark" href="index.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z" />
+          <path d="M8.5 12l2.5 2.5 4.5-5" />
+        </svg>
+        MADDY
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#compare">Compare</a></li>
+          <li><a href="#plans">Plans</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <h1>Norton or McAfee? Find the one that fits your home.</h1>
+          <p class="hero-lede">Both are solid. The right pick depends on how many devices you have and what you want
+            protected beyond viruses.</p>
+          <ul class="hero-points">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <path d="M5 12.5l4.5 4.5L19 7" />
+              </svg>Side-by-side features in plain English</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <path d="M5 12.5l4.5 4.5L19 7" />
+              </svg>First-year and renewal prices, both shown</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
+                <path d="M5 12.5l4.5 4.5L19 7" />
+              </svg>You buy directly from Norton or McAfee</li>
+          </ul>
+        </div>
+
+        <div class="picker">
+          <h2>Three questions, one recommendation</h2>
+          <p class="picker-progress" id="picker-progress" aria-live="polite">0 of 3 answered</p>
+
+          <form id="picker-form">
+            <fieldset>
+              <legend>How many devices need protecting?</legend>
+              <div class="choice-row">
+                <label class="choice"><input type="radio" name="devices" value="few"><span>1 to 3<small>Just me or a
+                      couple</small></span></label>
+                <label class="choice"><input type="radio" name="devices" value="family"><span>4 to 5<small>A typical
+                      family</small></span></label>
+                <label class="choice"><input type="radio" name="devices" value="many"><span>6 or more<small>Lots of
+                      phones and laptops</small></span></label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>What matters most beyond virus protection?</legend>
+              <div class="choice-row choice-row--pairs">
+                <label class="choice"><input type="radio" name="priority" value="backup"><span>Backing up my
+                    files</span></label>
+                <label class="choice"><input type="radio" name="priority" value="privacy"><span>VPN and identity
+                    alerts</span></label>
+                <label class="choice"><input type="radio" name="priority" value="price"><span>Lowest
+                    price</span></label>
+                <label class="choice"><input type="radio" name="priority" value="kids"><span>Keeping kids safe
+                    online</span></label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>What devices do you use?</legend>
+              <div class="choice-row">
+                <label class="choice"><input type="radio" name="platform" value="windows"><span>Mostly Windows
+                    PCs</span></label>
+                <label class="choice"><input type="radio" name="platform" value="mixed"><span>A mix of Mac, PC and
+                    phones</span></label>
+              </div>
+            </fieldset>
+          </form>
+
+          <div class="verdict" id="verdict" hidden aria-live="polite">
+            <p class="muted small">Our pick for you</p>
+            <p class="verdict-name"></p>
+            <p class="verdict-why"></p>
+            <div class="verdict-actions">
+              <a class="btn btn-primary" data-verdict-go href="#plans">See offers</a>
+              <a class="btn btn-ghost" href="#compare">Compare both</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAMPLE DATA: verify every feature and price against the vendor sites before launch. -->
+    <section class="section" id="compare">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Norton 360 vs McAfee Total Protection</h2>
+          <p>The plans most households choose, compared on what you actually get.</p>
+        </div>
+
+        <div class="table-scroll">
+          <table class="compare">
+            <caption>Features and prices as listed on each vendor's US site. Last checked {{LAST_CHECKED_DATE}}.
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col"><span class="visually-hidden">Feature</span></th>
+                <th scope="col">Norton 360 Deluxe</th>
+                <th scope="col">McAfee Total Protection</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">First-year price</th>
+                <td>$49.99</td>
+                <td>$39.99</td>
+              </tr>
+              <tr>
+                <th scope="row">Renews at</th>
+                <td>$119.99/yr</td>
+                <td>$119.99/yr</td>
+              </tr>
+              <tr>
+                <th scope="row">Devices covered</th>
+                <td>Up to 5</td>
+                <td>Up to 5 (more on higher plans)</td>
+              </tr>
+              <tr>
+                <th scope="row">Real-time virus and malware protection</th>
+                <td><span class="yes">Included</span></td>
+                <td><span class="yes">Included</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Secure VPN</th>
+                <td><span class="yes">Included</span></td>
+                <td><span class="yes">Included</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Password manager</th>
+                <td><span class="yes">Included</span></td>
+                <td><span class="yes">Included</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Cloud backup</th>
+                <td>50 GB (Windows)</td>
+                <td>Not included</td>
+              </tr>
+              <tr>
+                <th scope="row">Parental controls</th>
+                <td><span class="yes">Included</span></td>
+                <td>Higher plans</td>
+              </tr>
+              <tr>
+                <th scope="row">Identity and dark web monitoring</th>
+                <td><span class="yes">Included</span></td>
+                <td><span class="yes">Included</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Works on</th>
+                <td>Windows, Mac, iOS, Android</td>
+                <td>Windows, Mac, iOS, Android</td>
+              </tr>
+              <tr>
+                <th scope="row">Money-back guarantee</th>
+                <td>60 days</td>
+                <td>30 days</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td><a class="btn btn-primary" data-offer="norton" href="https://us.norton.com/">Get Norton 360</a></td>
+                <td><a class="btn btn-primary" data-offer="mcafee" href="https://www.mcafee.com/">Get McAfee</a></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="plans">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Where each one wins</h2>
+          <p>Neither is a bad choice. Here's who each plan suits best.</p>
+        </div>
+
+        <div class="plans">
+          <article class="plan">
+            <span class="plan-tag">First-year discount</span>
+            <h3>Norton 360 Deluxe</h3>
+            <p class="plan-price">$49.99 <small>first year</small></p>
+            <p class="plan-renew">Renews at $119.99/yr. Cancel auto-renew any time in your Norton account.</p>
+            <div class="plan-best"><strong>Best for</strong> Windows households who want backup and strong parental
+              controls in one app.</div>
+            <ul>
+              <li>Antivirus, firewall and ransomware protection</li>
+              <li>50 GB cloud backup for Windows PCs</li>
+              <li>Secure VPN and password manager</li>
+              <li>Parental controls and dark web monitoring</li>
+            </ul>
+            <a class="btn btn-primary" data-offer="norton" href="https://us.norton.com/">See Norton 360 offers</a>
+          </article>
+
+          <article class="plan">
+            <span class="plan-tag">First-year discount</span>
+            <h3>McAfee Total Protection</h3>
+            <p class="plan-price">$39.99 <small>first year</small></p>
+            <p class="plan-renew">Renews at $119.99/yr. Cancel auto-renew any time in your McAfee account.</p>
+            <div class="plan-best"><strong>Best for</strong> mixed Mac, PC and phone homes looking for the lowest
+              first-year price.</div>
+            <ul>
+              <li>Antivirus and web protection</li>
+              <li>Secure VPN and password manager</li>
+              <li>Identity monitoring and alerts</li>
+              <li>Larger device plans available</li>
+            </ul>
+            <a class="btn btn-primary" data-offer="mcafee" href="https://www.mcafee.com/">See McAfee offers</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="method">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>How we compare</h2>
+          <p>We don't accept payment for rankings. Here's the process behind this page.</p>
+        </div>
+        <ol class="method">
+          <li>
+            <h3>Check the plans</h3>
+            <p>We read each vendor's current US plan pages and note what's included.</p>
+          </li>
+          <li>
+            <h3>Compare real prices</h3>
+            <p>We list the first-year price and the renewal price, so there are no surprises.</p>
+          </li>
+          <li>
+            <h3>Match to households</h3>
+            <p>We map features to common needs: backup, kids, privacy, budget.</p>
+          </li>
+          <li>
+            <h3>Recheck regularly</h3>
+            <p>Prices change often. We update this page when the vendors do.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Common questions</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Are you Norton or McAfee?</summary>
+            <div>
+              <p>No. MADDY is an independent comparison site. When you click a button here, you go to the official
+                Norton or McAfee website and buy from them directly. Your account, billing and support are all with the
+                vendor.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Do you get paid when I buy?</summary>
+            <div>
+              <p>Sometimes. We may earn a commission from Norton or McAfee if you buy through our links. It doesn't
+                change the price you pay. <a href="affiliate-disclosure.html">Read our full disclosure</a>.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Is there a free trial?</summary>
+            <div>
+              <p>Both vendors regularly offer free trials and money-back guarantees. Trial length and terms are set by
+                the vendor, so check the offer page before you sign up.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Why is the renewal price higher?</summary>
+            <div>
+              <p>Both vendors discount the first year and renew at their standard price. You can turn off auto-renew in
+                your vendor account at any time.</p>
+            </div>
+          </details>
+          <details>
+            <summary>I need help with my existing Norton or McAfee subscription.</summary>
+            <div>
+              <p>We can't access your account or provide technical support. Please contact <a
+                  href="https://support.norton.com/" rel="noopener">Norton Support</a> or <a
+                  href="https://www.mcafee.com/support/" rel="noopener">McAfee Support</a> directly.</p>
+            </div>
+          </details>
+          <details>
+            <summary>Do I need antivirus if I have Windows Defender?</summary>
+            <div>
+              <p>Windows' built-in protection covers the basics. Paid suites add things Defender doesn't, like a VPN,
+                password manager, cloud backup, identity monitoring and protection for phones and Macs.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section closing">
+      <div class="wrap">
+        <h2>Ready to pick one?</h2>
+        <p>Both offer a money-back guarantee, so you can try one and switch if it isn't right.</p>
+        <div class="actions">
+          <a class="btn btn-primary" data-offer="norton" href="https://us.norton.com/">Get Norton 360</a>
+          <a class="btn btn-primary" data-offer="mcafee" href="https://www.mcafee.com/">Get McAfee</a>
+          <a class="btn btn-ghost" href="#main">Take the quiz again</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h2>MADDY</h2>
+          <address>
+            {{COMPANY_LEGAL_NAME}}<br>
+            {{STREET_ADDRESS}}<br>
+            {{CITY}}, {{STATE}} {{ZIP}}<br>
+            <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+          </address>
+        </div>
+        <div>
+          <h2>Site</h2>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="affiliate-disclosure.html">Affiliate disclosure</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Legal</h2>
+          <ul>
+            <li><a href="privacy.html">Privacy policy</a></li>
+            <li><a href="terms.html">Terms of use</a></li>
+            <li><a href="cookies.html">Cookie policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="legal-note">
+        <p>Norton and Norton 360 are trademarks of Gen Digital Inc. McAfee and McAfee Total Protection are trademarks of
+          McAfee, LLC. MADDY is not affiliated with, endorsed by, or sponsored by either company. Product names are
+          used only to identify the products compared. Prices and features change; always confirm on the vendor's site.
+        </p>
+        <p>&copy; <span data-year>2026</span> {{COMPANY_LEGAL_NAME}}. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js" defer></script>
+</body>
+
+</html>

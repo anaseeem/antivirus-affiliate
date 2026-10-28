@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact us | MADDY</title>
+  <meta name="description" content="Contact the team behind this comparison site.">
+  <link rel="canonical" href="https://{{DOMAIN}}/contact.html">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Public+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <div class="disclosure-strip">
+    <div class="wrap">
+      <p>We're an independent comparison site, not Norton or McAfee. We may earn a commission when you buy through our
+        links. <a href="affiliate-disclosure.html">How we make money</a></p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="wordmark" href="index.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z" />
+          <path d="M8.5 12l2.5 2.5 4.5-5" />
+        </svg>
+        MADDY
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html#compare">Compare</a></li>
+          <li><a href="index.html#plans">Plans</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="page">
+    <div class="wrap prose">
+      <h1>Contact us</h1>
+      <p>Questions, corrections, or partnership inquiries about this website. We usually reply within two business days.
+      </p>
+      <p class="muted">We can't help with Norton or McAfee accounts, billing, or technical issues. For those, contact <a
+          href="https://support.norton.com/" rel="noopener">Norton Support</a> or <a
+          href="https://www.mcafee.com/support/" rel="noopener">McAfee Support</a>.</p>
+
+      <!-- TODO: set action to your form endpoint (Formspree, Netlify Forms, Cloudflare Worker) and method="post" -->
+      <form class="form" id="contact-form" action="#" method="post">
+        <label>Your name<input type="text" name="name" autocomplete="name" required></label>
+        <label>Email<input type="email" name="email" autocomplete="email" required></label>
+        <label>Topic
+          <select name="topic">
+            <option>Question about a comparison</option>
+            <option>Report outdated info</option>
+            <option>Business or partnership</option>
+            <option>Privacy request</option>
+          </select>
+        </label>
+        <label>Message<textarea name="message" required></textarea></label>
+        <button class="btn btn-primary" type="submit">Send message</button>
+        <p class="form-status" id="contact-status" role="status"></p>
+      </form>
+
+      <h2>Business details</h2>
+      <address>
+        {{COMPANY_LEGAL_NAME}}<br>
+        {{STREET_ADDRESS}}<br>
+        {{CITY}}, {{STATE}} {{ZIP}}<br>
+        <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+      </address>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h2>MADDY</h2>
+          <address>
+            {{COMPANY_LEGAL_NAME}}<br>
+            {{STREET_ADDRESS}}<br>
+            {{CITY}}, {{STATE}} {{ZIP}}<br>
+            <a href="mailto:{{EMAIL}}">{{EMAIL}}</a>
+          </address>
+        </div>
+        <div>
+          <h2>Site</h2>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="affiliate-disclosure.html">Affiliate disclosure</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Legal</h2>
+          <ul>
+            <li><a href="privacy.html">Privacy policy</a></li>
+            <li><a href="terms.html">Terms of use</a></li>
+            <li><a href="cookies.html">Cookie policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="legal-note">
+        <p>Norton and Norton 360 are trademarks of Gen Digital Inc. McAfee and McAfee Total Protection are trademarks of
+          McAfee, LLC. MADDY is not affiliated with, endorsed by, or sponsored by either company. Product names are
+          used only to identify the products compared. Prices and features change; always confirm on the vendor's site.
+        </p>
+        <p>&copy; <span data-year>2026</span> {{COMPANY_LEGAL_NAME}}. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js" defer></script>
+</body>
+
+</html>

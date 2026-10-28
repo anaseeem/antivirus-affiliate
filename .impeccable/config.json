@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-28T13:43:27.631Z",
+        "reason": "Claude: static HTML scan cannot see CSS padding; rendered-page scan (detect http://localhost) reports 0 cramped-padding"
+      },
+      {
+        "rule": "tight-leading",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-28T13:43:27.642Z",
+        "reason": "Claude: static HTML scan artifact; rendered-page scan reports 0 tight-leading"
+      }
+    ]
+  }
+}
